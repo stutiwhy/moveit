@@ -47,6 +47,8 @@ const SetupProfile = () => {
   };
 
   const handleSubmit = async (e) => {
+    console.log("handleSubmit...")
+    console.log("currentStep:", currentStep);
     e.preventDefault();
 
     const { error } = await supabase.from("user_profiles").upsert(
@@ -73,11 +75,17 @@ const SetupProfile = () => {
     }
   };
 
-  const nextStep = () => {
+  const nextStep = (e) => {
+    console.log("nextStep...")
+    console.log("currentStep:", currentStep);
+    e.preventDefault()
     if (currentStep < steps.length - 1) setCurrentStep(currentStep + 1);
   };
 
-  const prevStep = () => {
+  const prevStep = (e) => {
+    console.log("prevStep...")
+    console.log("currentStep:", currentStep);
+    e.preventDefault()
     if (currentStep > 0) setCurrentStep(currentStep - 1);
   };
 
