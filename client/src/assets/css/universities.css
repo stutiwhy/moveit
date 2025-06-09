@@ -1,0 +1,105 @@
+/* Overall layout */
+html {
+    color-scheme: light;
+    background-color: #fff;
+  }
+  
+  body {
+    background-color: #fff;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Search bar and country filter */
+  .search-bar, .country-filter {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+  }
+  
+  .country-filter {
+    background-color: #fff;
+  }
+  
+  /* University list */
+  .university-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual university card styling */
+  .university-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .university-card h3 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .university-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+  }
+  
+  .university-card .country {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Error and empty state */
+  .error-message,
+  .empty-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin-top: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .university-list {
+      justify-content: center;
+    }
+  
+    .university-card {
+      width: 90%;
+    }
+  }
+  

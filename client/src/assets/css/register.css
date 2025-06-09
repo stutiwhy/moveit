@@ -1,0 +1,130 @@
+/* Global body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4934d6, #4697cd); /* Smooth gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start to avoid clipping */
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure the container fills the viewport */
+  padding: 20px 0; /* Add vertical padding to prevent clipping */
+}
+
+/* Register box styles */
+.register-box {
+  background: rgba(255, 255, 255, 0.95); /* Slight transparency for a soft feel */
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  background: #ffffff; /* Changed to pure white */
+  color: black; /* Set the text color to black */
+  transition: 0.3s;
+  text-align: center; /* Align input text in center */
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.6);
+  background: #fff;
+}
+
+/* Register Button */
+button.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg,  #4934d6, #4697cd);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.btn:hover {
+  background: linear-gradient(90deg,  #4934d6, #4697cd);
+  transform: scale(1.02);
+}
+
+button.btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+p a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

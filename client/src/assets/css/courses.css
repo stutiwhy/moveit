@@ -1,0 +1,139 @@
+/* Overall layout */
+/* Force light mode */
+html {
+  color-scheme: light; /* Force light mode */
+  background-color: #fff; /* Ensure light background */
+}
+
+body {
+  background-color: #fff; /* Make sure the background stays light */
+  color: black; /* Ensure text remains black */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Course list */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual course card styling */
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+.course-card .tuition-fee {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Error and empty state */
+.error-message,
+.empty-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-top: 20px;
+}
+
+/* Filter section (tuition fee slider) */
+.filter-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section label {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-section input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Slider styling */
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.slider-container input[type="range"] {
+  width: 90%;
+  margin-right: 10px;
+}
+
+.slider-container span {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.slider-label {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .course-list {
+    justify-content: center;
+  }
+
+  .course-card {
+    width: 90%;
+  }
+
+  .filter-section {
+    width: 100%;
+  }
+}

@@ -1,0 +1,99 @@
+/* General Styles for the Home Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    width: 50vw; /* Cover half of the viewport width */
+    height: 100vh; /* Cover full viewport height */
+    object-fit: cover; /* Prevent distortion */
+}
+
+.home-content {
+    flex: 1; /* Takes the remaining half of the page */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white; /* Ensuring all text is white */
+    text-align: center;
+}
+
+/* Ensuring all text elements inside home-content remain white */
+.home-title, 
+.home-description, 
+.cta-button {
+    color: white !important; 
+}
+
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgb(239, 239, 239);
+}
+
+.home-description {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: white !important; /* Ensuring button text remains white */
+}
+
+.cta-register {
+    background-color: white;
+    color: #16a085 !important;
+    border: 2px solid #16a085;
+}
+
+.cta-register:hover {
+    background-color: #16a085;
+    color: white !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(22, 160, 133, 0.4);
+}
+
+.cta-login {
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid white;
+}
+
+.cta-login:hover {
+    background-color: white;
+    color: #2980b9 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(41, 128, 185, 0.4);
+}

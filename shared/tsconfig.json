@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "composite": true,
+      "declaration": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "module": "ESNext"
+    }
+  }
+  

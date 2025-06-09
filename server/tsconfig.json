@@ -1,0 +1,22 @@
+{
+    "include": ["src/**/*", "../shared/**/*", "../shared/schema.ts"],
+    "exclude": ["build", "dist"],
+    "compilerOptions": {
+      "incremental": true,
+      "noEmit": true,
+      "module": "ESNext",
+      "strict": true,
+      "lib": ["esnext"],
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "allowImportingTsExtensions": true,
+      "moduleResolution": "Node",
+      "baseUrl": ".",
+      "types": ["node","express", "passport"],
+      "paths": {
+        "@server/*": ["../server/*"],
+        "@prisma/client": ["../shared/node_modules/.prisma/client"]
+      }
+    }
+  }
+  
