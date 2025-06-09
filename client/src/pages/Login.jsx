@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-500 font-sans px-4">
+    <div className="text-black min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-500 font-sans px-4">
       <form
         onSubmit={handleLogin}
         className="bg-white shadow-2xl rounded-xl p-10 w-full max-w-md animate-fade-in-down"

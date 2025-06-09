@@ -82,7 +82,7 @@ const SetupProfile = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto mt-12 p-6 bg-blue-50 rounded-3xl shadow-lg border border-blue-100 animate-fade-in font-sans animate-fade-in-down">
+    <div className="text-black max-w-3xl mx-auto mt-12 p-6 bg-blue-50 rounded-3xl shadow-lg border border-blue-100 animate-fade-in font-sans animate-fade-in-down">
       <h2 className="text-3xl font-bold text-blue-800 mb-6 text-center">Set Up Your Profile</h2>
 
       {/* Progress Bar */}
